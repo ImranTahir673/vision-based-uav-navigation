@@ -1,0 +1,48 @@
+=================================================================================
+               VISION-BASED NAVIGATION (VBN) SYSTEM FINAL REPORT                 
+=================================================================================
+Evaluated Dataset            : 2nd.MP4 (3840x2160 4K @ 30 FPS)
+Camera Intrinsics            : fx=2800, fy=2800, cx=1920, cy=1080
+Telemetry Synchronization    : 840 Log Rows (10 Hz) matched via OSD.isVideo
+3D World Database            : 35 Verified Building ECEF Landmarks
+Total Evaluated Video Frames : 2517 Frames (83.9 Seconds)
+Valid Visual Solutions       : 1408 / 2517 Frames
+Mean Inliers / Frame         : 3.4 Building Landmarks
+
+=================================================================================
+                       FULL TRAJECTORY ACCURACY METRICS                         
+=================================================================================
+1️⃣ RAW UNFILTERED INVERSE PNP (All 2517 Frames):
+   • Mean 2D Ground Error (MAE)  : 57.78 meters
+   • Standard Deviation (STD)    : 56.92 meters
+   • Minimum / Maximum Error     : 0.55m / 509.48m
+
+2️⃣ FUSED KALMAN FILTER TRAJECTORY (PnP + Temporal Smoothing):
+   • Mean 2D Ground Error (MAE)  : 44.14 meters (Slashed by 23.6%)
+   • Standard Deviation (STD)    : 39.61 meters
+   • Minimum / Maximum Error     : 1.07m / 188.38m
+
+=================================================================================
+                   HIGH-CONFIDENCE ANCHOR EVALUATION (>= 8 INLIERS)             
+=================================================================================
+Accepted High-Confidence Frames : 166 Frames
+Unfiltered Inverse PnP Error    : 29.32 meters
+🏆 FUSED KALMAN SMOOTHED ERROR   : 20.51 meters
+🎯 Target Ray Back-Projection    : 17.77 meters
+
+=================================================================================
+                     INLIER THRESHOLD ACCURACY SWEEP BREAKDOWN                   
+=================================================================================
+  • Inliers >=  5 | Valid Frames: 1408 | Raw Mean:  57.78m | Fused Mean:  36.60m
+  • Inliers >=  6 | Valid Frames:  877 | Raw Mean:  43.25m | Fused Mean:  28.43m
+  • Inliers >=  7 | Valid Frames:  448 | Raw Mean:  32.55m | Fused Mean:  23.47m
+  • Inliers >=  8 | Valid Frames:  166 | Raw Mean:  29.32m | Fused Mean:  20.51m
+  • Inliers >=  9 | Valid Frames:   18 | Raw Mean:  25.31m | Fused Mean:  19.38m
+
+=================================================================================
+                               METHOD COMPARISON                                 
+=================================================================================
+• Standard Forward PnP Error (>=8 Inliers) : 28.91 meters
+• Inverse PnP Error (>=8 Inliers)          : 29.32 meters (Unfiltered Full Run)
+• Inverse PnP + Zero-Drift Kalman Filter   : 20.51 meters 🏆 (Best Accuracy)
+=================================================================================

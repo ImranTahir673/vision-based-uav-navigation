@@ -1,0 +1,4 @@
+=== YOLOv8_Nano EVALUATION REPORT ===
+Solved PnP Frames : 2517 / 2517
+MAE 3D Error      : 1109.89 meters
+Standard Dev      : 2166.39 meters

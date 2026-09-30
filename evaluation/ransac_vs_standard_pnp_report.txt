@@ -1,0 +1,14 @@
+=========================================================
+       RANSAC PNP VS. STANDARD PNP PERFORMANCE REPORT    
+=========================================================
+
+Total Evaluated Frames     : 1413 / 2517
+Mean Total Landmarks/Frame : 16.8
+Mean RANSAC Inliers/Frame  : 6.1
+
+RANSAC ACCURACY METRICS:
+  Mean 2D Horizontal Error : 57.18 meters
+  Mean 3D Euclidean Error  : 60.05 meters
+  Minimum 2D Error         : 1.02 meters
+  Maximum 2D Error         : 399.67 meters
+=========================================================

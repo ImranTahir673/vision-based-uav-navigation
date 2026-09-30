@@ -1,0 +1,14 @@
+=========================================================
+  FULLY SYNCHRONIZED 4K PNP EVALUATION (840 TELEMETRY ROWS) 
+=========================================================
+
+Synchronized Frames        : 2517 / 2517
+Mean Detections/Frame       : 16.2
+
+ACCURACY METRICS (3D EUCLIDEAN ERROR):
+  Mean Absolute Error (MAE)  : 522.08 meters
+  Standard Deviation (STD)   : 51.36 meters
+  Minimum Error              : 466.33 meters
+  Maximum Error              : 1020.53 meters
+
+=========================================================

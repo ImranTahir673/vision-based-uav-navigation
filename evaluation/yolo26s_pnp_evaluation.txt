@@ -1,0 +1,4 @@
+=== YOLO26_Small EVALUATION REPORT ===
+Solved PnP Frames : 2517 / 2517
+MAE 3D Error      : 1213.93 meters
+Standard Dev      : 8249.55 meters

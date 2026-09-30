@@ -1,0 +1,16 @@
+=========================================================
+      4K VISION-BASED NAVIGATION (PNP EVALUATION)        
+=========================================================
+
+Evaluated Video File        : 2nd.MP4 (3840x2160 4K)
+Camera Matrix               : fx=2800, fy=2800, cx=1920, cy=1080
+Total Evaluated Frames      : 2517 / 2517
+Mean Landmark Detections    : 16.2 per frame
+
+ACCURACY METRICS (3D EUCLIDEAN ERROR):
+  Mean Absolute Error (MAE)  : 423.98 meters
+  Standard Deviation (STD)   : 216.73 meters
+  Minimum Error              : 22.42 meters
+  Maximum Error              : 840.14 meters
+
+=========================================================
